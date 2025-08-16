@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarCrazeOffical — Cart</title>
+  <meta name="description" content="View and manage your cart." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="assets/logo.svg" alt="StarCrazeOffical logo" width="140" height="28" />
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a class="cart-link" href="cart.html" aria-label="Cart">
+        <span id="cartCount" class="cart-count">0</span>
+        Cart
+      </a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="cart">
+      <h1>Your Cart</h1>
+      <div id="cartItems"></div>
+      <div class="cart-summary">
+        <div class="row"><span>Subtotal</span><strong id="subtotal">—</strong></div>
+        <div class="row small">Taxes & Shipping are calculated at checkout.</div>
+        <button id="checkoutBtn" class="btn">Checkout</button>
+        <a class="btn ghost" href="index.html">Continue shopping</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> StarCrazeOffical. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
